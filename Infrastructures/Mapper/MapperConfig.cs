@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entities.Enum
+namespace Infrastructures.Mapper
 {
-    public enum Role
+    internal class MapperConfig
     {
-        Admin, Customer
     }
 }

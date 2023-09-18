@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entities.Enum
+namespace Infrastructures
 {
-    public enum Role
+    internal class AppDBContext
     {
-        Admin, Customer
     }
 }
