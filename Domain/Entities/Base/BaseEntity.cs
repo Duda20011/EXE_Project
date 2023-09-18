@@ -1,4 +1,9 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Domain.Entities.Base
 {
@@ -12,5 +17,9 @@ namespace Domain.Entities.Base
         public DateTime? DeletionDate { get; set; }
         public int? DeleteBy { get; set; }
         public bool IsDeleted { get; set; }
+        [Required]
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime UpdatedAt { get; set; }
     }
 }

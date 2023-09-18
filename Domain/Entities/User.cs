@@ -9,5 +9,9 @@ namespace Domain.Entities
         public string Password { get; set; }
         public string Email { get; set; }
         public Role Role { get; set; }
+        public Guid CustormerId { get; set; }
+        public Customer Customer { get; set; }
+        public Guid SellerId { get; set; }
+        public Seller Seller { get; set; }
     }
 }

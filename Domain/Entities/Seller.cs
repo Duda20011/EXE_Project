@@ -6,6 +6,6 @@ namespace Domain.Entities
         public string SellerName { get; set; }
         public string Avatar { get; set; }
         public string Phone { get; set; }
-
+        public ICollection<User> Users { get; set; }
     }
 }

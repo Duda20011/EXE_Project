@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Infrastructures
+﻿namespace Infrastructures
 {
-    internal class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
+        private readonly AppDBContext _appDBContext;
+        public UnitOfWork(AppDBContext appDBContext)
+        {
+            _appDBContext = appDBContext;
+        }
+        public async Task<int> SaveChangeAsync() => await _appDBContext.SaveChangesAsync();
     }
 }
